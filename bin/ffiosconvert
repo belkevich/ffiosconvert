@@ -9,7 +9,7 @@ begin
 
 rescue StandardError=>error
   puts "#{error}\n\n" unless error.nil?
-  puts "Usage:\nffiosconvert <WIDTHxHEIGHT>"
+  puts "Usage:\nffiosconvert [<WIDTHxHEIGHT>]"
   puts "\t- default value is 640x360"
   puts "\t- example: ffiosconvert 320x180"
   puts ""
