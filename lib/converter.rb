@@ -22,8 +22,7 @@ class Converter
       if !command.nil?
         puts "--- Converting #{e} ---"
         success = system(convert_file(e))
-        raise "Failed on \"#{e}\" conversion" unless !success
-        exit 0
+        raise "Failed on \"#{e}\" conversion" unless success
         puts "=== Finished #{e} ==="
       end
     end
