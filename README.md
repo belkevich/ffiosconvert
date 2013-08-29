@@ -49,3 +49,9 @@ ffiosconvert [<WIDTHxHEIGHT>]
 * example: ffiosconvert 320x180
 
 ---
+
+#### Updates
+
+[@okolodev](https://twitter.com/okolodev)
+
+---
