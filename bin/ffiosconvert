@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+require "converter"
+
+begin
+  raise "Too many arguments" if ARGV.size > 1
+  res = ARGV.empty? ? "640x360" : ARGV[0]
+  Converter.new(res)
+
+rescue StandardError=>error
+  puts "#{error}\n\n" unless error.nil?
+  puts "Usage:\nffiosconvert <WIDTHxHEIGHT>"
+  puts "\t- default value is 640x360"
+  puts "\t- example: ffiosconvert 320x180"
+  puts ""
+  exit 1
+end
+
+exit 0
